@@ -1,7 +1,14 @@
 package com.everis.mvpkotlin.login.view
 
 interface LoginView {
-    fun showErrorLogin()
+
+    fun manageEmptyUser()
+
+    fun manageEmptyPassword()
+
+    fun manageEmptyLogin()
+
+    fun manageErrorLogin()
 
     fun manageLoginOk()
 }

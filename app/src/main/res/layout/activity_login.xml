@@ -34,6 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title_login">
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/userLoginEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
@@ -51,6 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/userLogin">
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/passwordLoginEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password_login"
