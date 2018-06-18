@@ -3,6 +3,7 @@ package com.everis.mvpkotlin.listEmployees.view
 import android.support.v7.widget.LinearLayoutManager
 import com.everis.mvpkotlin.R
 import com.everis.mvpkotlin.commons.view.BaseActivity
+import com.everis.mvpkotlin.commons.view.showSnackbar
 import com.everis.mvpkotlin.listEmployees.model.entities.Employee
 import com.everis.mvpkotlin.listEmployees.presenter.IListEmployeesPresenter
 import com.everis.mvpkotlin.listEmployees.presenter.ListEmployeesPresenter
@@ -38,6 +39,7 @@ class ListEmployeesActivity : BaseActivity(), ListEmployeesView {
     }
 
     override fun showErrorServer() {
+        showSnackbar(getString(R.string.error_load_employees))
     }
 
 }

@@ -12,5 +12,6 @@
     <string name="error_empty_user">El campo de usuario no pueden ser vacío</string>
     <string name="error_empty_password">El campo de contraseña no pueden ser vacío</string>
     <string name="error_incorrect_login">El usuario o contraseña no son correctos</string>
+    <string name="error_load_employees">No se ha podido cargar los empleados</string>
 
 </resources>
