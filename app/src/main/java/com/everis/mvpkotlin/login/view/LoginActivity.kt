@@ -1,13 +1,23 @@
 package com.everis.mvpkotlin.login.view
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import com.everis.mvpkotlin.R
+import com.everis.mvpkotlin.commons.view.BaseActivity
 
-class LoginActivity : AppCompatActivity(), LoginView {
+class LoginActivity : BaseActivity(), LoginView {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+    override val layoutResource: Int
+        get() = R.layout.activity_login
+
+    override fun linkView() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
+
+    override fun linkPresenter() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun logic() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
 }
