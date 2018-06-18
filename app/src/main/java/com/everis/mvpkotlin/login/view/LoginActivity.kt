@@ -1,9 +1,11 @@
 package com.everis.mvpkotlin.login.view
 
+import android.content.Intent
 import android.view.View
 import com.everis.mvpkotlin.R
 import com.everis.mvpkotlin.commons.view.BaseActivity
 import com.everis.mvpkotlin.commons.view.showSnackbar
+import com.everis.mvpkotlin.listEmployees.view.ListEmployeesActivity
 import com.everis.mvpkotlin.login.presenter.ILoginPresenter
 import com.everis.mvpkotlin.login.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_login.*
@@ -32,6 +34,8 @@ class LoginActivity : BaseActivity(), LoginView, View.OnClickListener {
     }
 
     override fun manageLoginOk() {
+        var intent = Intent(this, ListEmployeesActivity::class.java)
+        startActivity(intent)
     }
 
     override fun manageEmptyUser() {
