@@ -20,4 +20,12 @@ class LoginActivity : BaseActivity(), LoginView {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
+    override fun showErrorLogin() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun manageLoginOk() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
 }
