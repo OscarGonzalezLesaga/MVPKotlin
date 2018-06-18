@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">MVPKotlin</string>
+
+    <!-- Screen login -->
     <string name="title_login">MVP Kotlin</string>
     <string name="user_login">Usuario</string>
     <string name="password_login">Contraseña</string>
     <string name="title_button_login">Registro</string>
+
+    <!-- Error Login -->
+    <string name="error_empty_login">Los campos usuario y contraseña no pueden ser vacíos</string>
+    <string name="error_empty_user">El campo de usuario no pueden ser vacío</string>
+    <string name="error_empty_password">El campo de contraseña no pueden ser vacío</string>
+    <string name="error_incorrect_login">El usuario o contraseña no son correctos</string>
+
 </resources>

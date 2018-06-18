@@ -11,7 +11,7 @@ import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
 
 
-class LoginTest {
+class LoginPresenterTest {
 
     @Mock
     lateinit var view: LoginView
