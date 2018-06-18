@@ -23,7 +23,7 @@ class ListEmployeesPresenter(private var view: ListEmployeesView) : IListEmploye
     override fun onResponse(call: Call<List<Employee>>?, response: Response<List<Employee>>?) {
         var responseOK = response?.isSuccessful ?: false
         if (responseOK) {
-            view.showListEmployees(response?.body())
+            view.showListEmployees(response?.body() ?: ArrayList())
         } else {
             view.showErrorServer()
         }
