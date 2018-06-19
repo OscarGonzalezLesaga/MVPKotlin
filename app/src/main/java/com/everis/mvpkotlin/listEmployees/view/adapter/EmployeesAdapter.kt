@@ -35,9 +35,9 @@ class EmployeesAdapter(var employeeList: List<Employee> = ArrayList(), var conte
     class EmployeeViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         fun bind(employee: Employee, backgroundColor: Int) {
-            itemView.nameText.text = employee?.name
-            itemView.emailText.text = employee?.email
-            itemView.usernameText.text = employee?.username
+            itemView.nameText.text = employee.name
+            itemView.emailText.text = employee.email
+            itemView.usernameText.text = employee.username
             itemView.setBackgroundColor(backgroundColor)
         }
     }

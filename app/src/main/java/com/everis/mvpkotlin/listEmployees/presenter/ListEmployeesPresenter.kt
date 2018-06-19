@@ -2,15 +2,13 @@ package com.everis.mvpkotlin.listEmployees.presenter
 
 import com.everis.mvpkotlin.listEmployees.model.entities.Employee
 import com.everis.mvpkotlin.listEmployees.model.service.IListEmployeesService
-import com.everis.mvpkotlin.listEmployees.model.service.ListEmployeesService
 import com.everis.mvpkotlin.listEmployees.view.ListEmployeesView
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class ListEmployeesPresenter(private var view: ListEmployeesView) : IListEmployeesPresenter, Callback<List<Employee>> {
+class ListEmployeesPresenter(private var view: ListEmployeesView, private var service: IListEmployeesService) : IListEmployeesPresenter, Callback<List<Employee>> {
 
-    var service: IListEmployeesService = ListEmployeesService()
 
     override fun getListEmployees() {
         service.getListEmployees().enqueue(this)
